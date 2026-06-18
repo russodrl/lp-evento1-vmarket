@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VMarket | Economize nas compras do seu restaurante</title>
+<meta name="description" content="Está aqui no evento? Fale com a VMarket e descubra como automatizar suas cotações e economizar até 25% nas compras do seu restaurante.">
+<link rel="icon" href="https://www.vmarket.com.br/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://evento1.vmarket.com.br/">
+<meta property="og:title" content="VMarket | Economize nas compras do seu restaurante">
+<meta property="og:description" content="Automatize suas cotações e ache o melhor preço com 1 clique. Economize até 25% nas compras do seu restaurante. Fale com a VMarket aqui no evento.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noite:#1A3A2F;--mata:#2A5C45;--folha:#3E7A5E;--terra:#C96B2A;--ambar:#E07F3A;
+  --linho:#F5F1EC;--linho-borda:#E7DFD3;--tinta:#23312A;--tinta-suave:#56655D;--verde-claro:#CBDCD2;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--tinta);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.12}
+h2{font-size:clamp(28px,4vw,40px);color:var(--noite)}
+.sec{padding:80px 0}
+.btn{display:inline-block;background:var(--terra);color:#fff;font-weight:700;font-size:18px;padding:17px 38px;border-radius:12px;text-decoration:none;transition:background .18s ease, transform .18s ease;border:0;cursor:pointer}
+.btn:hover{background:#B35E22;transform:translateY(-1px)}
+.btn.big{font-size:20px;padding:20px 46px}
+.btn .wa{display:inline-block;vertical-align:-2px;margin-right:8px}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(245,241,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linho-borda)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 24px;max-width:1080px;margin:0 auto}
+.nav img{height:32px;width:auto}
+.nav .btn{padding:10px 20px;font-size:14px}
+
+/* HERO */
+.hero{background:var(--noite);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden;text-align:center}
+.hero::after{content:"";position:absolute;left:50%;top:-160px;transform:translateX(-50%);width:760px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(224,127,58,.18),transparent 65%);pointer-events:none}
+.hero .badge{position:relative;display:inline-flex;align-items:center;gap:8px;background:#16332A;border:1px solid rgba(224,127,58,.4);border-radius:100px;padding:9px 18px;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ambar)}
+.hero h1{position:relative;font-size:clamp(34px,5.5vw,56px);max-width:880px;margin:24px auto 0;color:#fff}
+.hero h1 .hl{color:var(--ambar)}
+.hero p.lead{position:relative;font-size:19px;color:var(--verde-claro);max-width:620px;margin:22px auto 0}
+.hero .cta-row{position:relative;margin-top:36px}
+.hero .cta-note{display:block;position:relative;font-size:14px;color:#8FA89A;margin-top:16px}
+.hero .stats{display:flex;justify-content:center;gap:48px;margin-top:56px;padding-top:36px;border-top:1px solid rgba(255,255,255,.12);flex-wrap:wrap;position:relative}
+.hero .stats b{display:block;font-size:30px;font-weight:800;color:#fff}
+.hero .stats span{font-size:13px;color:#8FA89A}
+
+/* VALOR */
+.valor{background:var(--linho)}
+.valor-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
+.vcard{background:#fff;border:1px solid var(--linho-borda);border-radius:18px;padding:34px 30px}
+.vcard .ico{width:50px;height:50px;border-radius:13px;background:var(--noite);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.vcard .ico svg{width:26px;height:26px;stroke:var(--ambar);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.vcard h3{font-size:21px;color:var(--noite);margin-bottom:8px}
+.vcard p{font-size:15px;color:var(--tinta-suave)}
+.vcard .big{font-size:40px;font-weight:800;color:var(--folha);letter-spacing:-.02em;display:block;margin-bottom:4px}
+
+/* COMO */
+.como{background:#fff}
+.como-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.step{background:var(--linho);border-radius:16px;padding:28px 24px}
+.step .num{font-family:'DM Mono',monospace;font-size:13px;color:var(--folha);font-weight:500}
+.step h3{font-size:18px;margin:10px 0 8px;color:var(--noite)}
+.step p{font-size:14.5px;color:var(--tinta-suave)}
+
+/* PROVA */
+.prova{background:var(--linho);text-align:center}
+.prova .eyebrow{color:var(--folha)}
+.prova img{margin:32px auto 0;max-width:920px;width:100%}
+
+/* TELA */
+.tela{background:#fff}
+.tela-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;margin-top:20px}
+.tela .eyebrow{color:var(--folha)}
+.tela h2{margin:14px 0 16px}
+.tela p{font-size:16px;color:var(--tinta-suave);margin-bottom:18px}
+.tela ul{list-style:none}
+.tela li{font-size:15px;color:var(--tinta);padding:8px 0 8px 30px;position:relative}
+.tela li::before{content:"";position:absolute;left:0;top:14px;width:16px;height:16px;border-radius:50%;background:var(--folha);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/contain no-repeat}
+.shot{border-radius:18px;overflow:hidden;border:1px solid var(--linho-borda);box-shadow:0 24px 60px -28px rgba(26,58,47,.35)}
+
+/* CTA STRIP */
+.strip{background:var(--mata);color:#fff;text-align:center;padding:64px 0}
+.strip h2{color:#fff;max-width:680px;margin:0 auto 8px}
+.strip p{color:#D8E5DC;font-size:17px;max-width:560px;margin:0 auto 28px}
+
+/* FINAL */
+.final{background:var(--terra);color:#fff;text-align:center;padding:88px 0}
+.final h2{color:#fff;max-width:680px;margin:0 auto}
+.final p{font-size:18px;color:#F7E8DA;max-width:560px;margin:18px auto 0}
+.final .btn{margin-top:32px;background:var(--noite)}
+.final .btn:hover{background:#143027}
+.final .micro{font-size:14px;color:#F1D9C2;margin-top:14px}
+
+/* FOOTER */
+footer{background:var(--noite);color:#8FA89A;padding:30px 0;text-align:center}
+footer img{height:28px;width:auto;margin:0 auto 12px}
+footer span{font-size:13px}
+footer a{color:var(--verde-claro);text-decoration:none}
+
+.rev{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+.rev.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none}}
+
+@media (max-width:820px){
+  .valor-grid{grid-template-columns:1fr}
+  .como-grid{grid-template-columns:1fr}
+  .tela-grid{grid-template-columns:1fr;gap:28px}
+  .tela .shot-wrap{order:-1}
+}
+@media (max-width:600px){
+  .sec{padding:56px 0}
+  .hero .stats{gap:28px}
+  .nav .btn{padding:9px 15px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-asset="logodark" alt="VMarket Food Solutions">
+    <a class="btn" href="#cadastro">Falar com a VMarket</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">● Está aqui no evento?</span>
+    <h1>Automatize suas cotações e ache o melhor preço com <span class="hl">1 clique</span></h1>
+    <p class="lead">A VMarket dispara a sua cotação para os fornecedores do seu próprio restaurante de uma vez só e mostra o melhor preço de cada item na hora. Você economiza até 25% e para de perder tempo cotando.</p>
+    <div class="cta-row">
+      <a class="btn big" href="#cadastro">Quero falar com a VMarket</a>
+      <span class="cta-note">Fale com a nossa equipe aqui no evento, resposta na hora</span>
+    </div>
+    <div class="stats">
+      <div><b>2.000+</b><span>restaurantes e hotéis</span></div>
+      <div><b>20.000+</b><span>fornecedores</span></div>
+      <div><b>R$ 2 bi+</b><span>em compras por ano</span></div>
+      <div><b>até 25%</b><span>de economia no CMV</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec valor">
+  <div class="wrap rev">
+    <span class="eyebrow" style="color:var(--folha)">Por que a VMarket</span>
+    <h2 style="margin-top:14px">Duas dores que todo dono de restaurante conhece</h2>
+    <div class="valor-grid">
+      <div class="vcard">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <span class="big">até 25%</span>
+        <h3>de economia nas compras</h3>
+        <p>A plataforma dispara a sua cotação para todos os fornecedores ao mesmo tempo e mostra o melhor preço de cada item. Você compra mais barato sem perder qualidade.</p>
+      </div>
+      <div class="vcard">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <span class="big">80% menos</span>
+        <h3>tempo perdido cotando</h3>
+        <p>Chega de ligar e mandar mensagem pra um fornecedor de cada vez. Uma cotação só vai pra todos por WhatsApp e e-mail, e as respostas voltam organizadas numa tela.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec como">
+  <div class="wrap rev">
+    <span class="eyebrow" style="color:var(--folha)">Como funciona</span>
+    <h2 style="margin-top:14px">Simples assim, em 3 passos</h2>
+    <div class="como-grid">
+      <div class="step"><span class="num">01</span><h3>Monte a cotação</h3><p>Selecione os produtos que você precisa comprar e a plataforma envia para todos os seus fornecedores de uma vez.</p></div>
+      <div class="step"><span class="num">02</span><h3>Compare os preços</h3><p>As respostas chegam organizadas numa tela só, com o melhor preço de cada item já destacado.</p></div>
+      <div class="step"><span class="num">03</span><h3>Compre melhor</h3><p>Fecha com o melhor fornecedor em minutos e ainda guarda o histórico de preços para negociar sempre.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec prova">
+  <div class="wrap rev">
+    <span class="eyebrow">Quem já compra pela VMarket</span>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-asset="clientes" alt="Clientes VMarket: Fasano, Meliá, Intercity, Bourbon, Pecorino, Parmê, Graal e outros">
+  </div>
+</section>
+
+<section class="sec tela">
+  <div class="wrap">
+    <div class="tela-grid rev">
+      <div>
+        <span class="eyebrow">Tudo numa tela só</span>
+        <h2>O melhor preço de cada item, na hora</h2>
+        <p>A mesma cotação vai para todos os fornecedores e as respostas voltam consolidadas. O sistema marca o melhor preço de cada produto pra você decidir rápido.</p>
+        <ul>
+          <li>Preço, prazo de pagamento e condição lado a lado</li>
+          <li>Histórico de preços salvo automaticamente</li>
+          <li>Decisão de compra em minutos, não em horas</li>
+        </ul>
+      </div>
+      <div class="shot-wrap"><div class="shot"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-asset="painel" alt="Painel de cotação consolidada da VMarket"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip rev">
+  <div class="wrap">
+    <h2>A VMarket está aqui no evento</h2>
+    <p>Preencha seus dados e fale agora com a nossa equipe no evento.</p>
+    <a class="btn big" href="#cadastro">Quero falar agora</a>
+  </div>
+</section>
+
+<section class="sec tela">
+  <div class="wrap">
+    <div class="tela-grid rev">
+      <div class="shot-wrap"><div class="shot"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-asset="whats" alt="Cotação automática via WhatsApp"></div></div>
+      <div>
+        <span class="eyebrow">Cotação por WhatsApp</span>
+        <h2>O fornecedor responde pelo celular dele</h2>
+        <p>Um clique dispara a cotação por WhatsApp e e-mail. O fornecedor preenche o preço num link, sem ligação e sem áudio, e a resposta cai direto na plataforma.</p>
+        <ul>
+          <li>Cotação completa em poucas horas</li>
+          <li>Sem digitar resposta de fornecedor</li>
+          <li>Funciona com os fornecedores que você já tem</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="cadastro">
+  <div class="wrap rev">
+    <span class="eyebrow" style="color:#F1D9C2">Fale com a VMarket no evento</span>
+    <h2 style="margin-top:16px">Pronto para economizar nas compras do seu restaurante?</h2>
+    <p>Preencha seus dados e você vai direto para o WhatsApp da nossa equipe aqui no evento.</p>
+    <a class="btn big" href="https://tally.so/r/0QGdON" target="_blank" rel="noopener"><span class="wa">💬</span>Falar com a VMarket</a>
+    <p class="micro">Leva 1 minuto · resposta na hora</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-asset="logowhite" alt="VMarket Food Solutions">
+    <span>Plataforma de compras para o food service · <a href="https://www.vmarket.com.br" target="_blank" rel="noopener">vmarket.com.br</a> · <a href="https://www.instagram.com/vmarket_br" target="_blank" rel="noopener">@vmarket_br</a></span>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+</script>
+<script src="asset_logodark.js"></script><script src="asset_logowhite.js"></script><script src="asset_clientes.js"></script><script src="asset_painel.js"></script><script src="asset_whats.js"></script><script>document.querySelectorAll("img[data-asset]").forEach(function(i){if(window.ASSETS&&window.ASSETS[i.dataset.asset])i.src=window.ASSETS[i.dataset.asset]});</script>
+</body>
+</html>
